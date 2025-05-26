@@ -9,14 +9,61 @@
 </head>
 <body>
     <nav class="navbar navbar-dark bg-dark">
-        <div class="container-fluid">
+        <div class="container-fluid container">
             <a class="navbar-brand fs-2" href="#">Data to Chart</a>
         </div>
     </nav>
     <div class="container">
         <h1 class="mt-5">Data to Chart</h1>
-        <div id="chartContainer" class="mt-1">
-          This is a simple web application that takes data inputs and displays it in a chart format.
+                <div class="container mt-5">
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="data-tab" data-bs-toggle="tab" data-bs-target="#data" type="button" role="tab" aria-controls="data" aria-selected="true">Data</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="chart-tab" data-bs-toggle="tab" data-bs-target="#chart" type="button" role="tab" aria-controls="chart" aria-selected="false">Chart</button>
+            </li>
+          </ul>
+            <div class="tab-content mt-3" id="myTabContent">
+            <div class="tab-pane fade show active" id="data" role="tabpanel" aria-labelledby="data-tab">
+              <div class="container">
+                <div class="row">
+                <div class="col-12 col-md-6">
+                  <!-- Content for the first column -->
+                  <h4>January</h4>
+                  <div class="row">
+                  <div class="col-6">
+                    <label for="january-income" class="form-label">Income</label>
+                    <input type="number" class="form-control" id="january-income" name="income" placeholder="Enter income">
+                  </div>
+                  <div class="col-6">
+                    <label for="january-expenses" class="form-label">Expenses</label>
+                    <input type="number" class="form-control" id="january-expenses" name="expenses" placeholder="Enter expenses">
+                  </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <!-- Content for the second column -->
+                  <h4>February</h4>
+                  <div class="row">
+                  <div class="col-6">
+                    <label for="february-income" class="form-label">Income</label>
+                    <input type="number" class="form-control" id="february-income" name="income" placeholder="Enter income">
+                  </div>
+                  <div class="col-6">
+                    <label for="february-expenses" class="form-label">Expenses</label>
+                    <input type="number" class="form-control" id="february-expenses" name="expenses" placeholder="Enter expenses">
+                  </div>
+                  </div>
+                </div>
+                </div>
+              </div>
+            </div>
+            </div>
+            <div class="tab-pane fade" id="chart" role="tabpanel" aria-labelledby="chart-tab">
+              <p>Placeholder text for the Chart tab. Add your chart or visualization here.</p>
+            </div>
+          </div>
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

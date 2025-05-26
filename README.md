@@ -10,6 +10,6 @@ A simple HTML project created using GitHub Copilot.
 
 
 <a href='' target='_blank'>
-<img src='' width='700' alt='project-image'>
+<img src='./public/g1.JPG' width='700' alt='project-image'>
 </a>
 
