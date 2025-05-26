@@ -1,0 +1,21 @@
+{
+  "name": "data-to-chart",
+  "version": "1.0.0",
+  "description": "A project to convert data into chart.",
+  "main": "index.html",
+  "scripts": {
+    "start": "live-server"
+  },
+
+  "dependencies": {
+    "bootstrap": "^5.3.0"
+  },
+
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  },
+
+  "author": "",
+  "license": "ISC"
+}
+
