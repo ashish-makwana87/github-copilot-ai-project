@@ -1,6 +1,6 @@
 
   window.onload = function() {
-
+  
    const ctx = document.getElementById("myChart").getContext("2d");
    
    const myChart = new Chart(ctx, {
@@ -38,6 +38,18 @@
     },
   });
 
+
+  document.getElementById("downloadChart").addEventListener("click", () => {
+   const canvas = document.getElementById("myChart");
+   const image = canvas.toDataURL("image/jpeg"); // Convert canvas to data URL (JPEG format)
+     
+   const link = document.createElement("a");
+   link.href = image;
+   link.download = "chart.jpg"; // Set the default file name
+   link.click(); // Trigger the download
+     });
+
+   
    document.getElementById("chart-tab").addEventListener("click", () => {
   
   
